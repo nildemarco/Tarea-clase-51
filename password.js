@@ -53,9 +53,7 @@ const letterPass = password => (letters.test(password))
 
 const numberPass = password => (numbers.test(password))
 
-const validarPass = password => (largoPass(password) === true
-&& numberPass(password) === true
-&& letterPass(password) === true)
+const validarPass = password => (largoPass(password) && numberPass(password) && letterPass(password))
 
 
 
